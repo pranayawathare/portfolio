@@ -1,0 +1,618 @@
+/* General Styles */
+/* body{
+    background-color: var(--body-color);
+} */
+/* styles.css */
+
+/* styles.css */
+
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: hsl(250, 69%, 61%);
+    margin: 0 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.navbar-brand{
+    color: hsl(250, 69%, 61%);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    /* border-radius: 1rem; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    background-color: #fff;
+}
+
+.header__text {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.header__title {
+    color: #6c757d;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.header__description {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.header__img-container {
+    margin: 0 2rem;
+}
+
+.header__img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 13px solid  hsl(250, 69%, 61%);
+    object-fit: fill;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.375rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-lg {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+/* Social Media Icons */
+.home__social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.home__social-icon {
+    color:  hsl(250, 69%, 61%);
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.home__social-icon:hover {
+    color: #0056b3;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+    .header__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__text {
+        margin: 1.5rem 0;
+    }
+
+    .header__img-container {
+        margin: 1.5rem 0;
+    }
+}
+
+nav {
+    margin-bottom: 1rem;
+    background-color: hsl(250, 60%, 99%);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    /* background-color: var(--body-color); */
+    padding: 3rem 1rem;
+}
+
+/* About Section Image Styling */
+#about img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+    border: 3px solid #007bff; /* Optional border color */
+}
+
+/* Skills Section Icons */
+#skills i {
+    color: hsl(250, 69%, 61%); /* Color for skill icons */
+    transition: color 0.3s ease;
+}
+
+#skills i:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+#skills h3 {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between the text and button */
+}
+
+
+/* Ensure the skill-info container is properly aligned */
+.skill-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between text and button */
+    margin-bottom: 1rem; /* Adjust spacing from below elements */
+}
+
+/* Style the toggle button */
+.btn-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    padding: 0;
+}
+
+
+
+/* Show the list when details-list is active */
+.details-list.show {
+    max-height: 1000px; /* Adjust as necessary */
+}
+
+
+.details-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.details-content {
+    position: relative;
+    padding: 20px;
+    background: #fff; /* Background color of content */
+    border-radius: 6px;
+    margin-top: 30px; /* Adjusted to create space between line and content */
+}
+.mb-0{
+    font-weight: 400;
+}
+
+.details-list li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.details-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+
+
+/* Experience Section */
+.experience-timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    border-left: 2px solid #007bff; /* Vertical line color */
+    transform: translateX(-50%);
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10px; /* Adjusted to create space between line and content */
+    width: 10px;
+    height: 10px;
+    background: #007bff; /* Dot color */
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    position: relative;
+    padding: 20px;
+    /* background: #f8f9fa;  */
+    border-radius: 6px;
+    margin-top: 30px; /* Adjusted to create space between line and content */
+}
+.btn.btn-info{
+    background-color: hsl(250, 69%, 61%);
+    border-color: hsl(250, 69%, 61%);
+    color: #fff;
+
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 0;
+    margin-right: calc(50% + 30px); /* Adjusted to create space between line and content */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: calc(50% + 30px); /* Adjusted to create space between line and content */
+    margin-right: 0;
+}
+
+.timeline-content h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.timeline-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Modal Styles */
+/* .modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+} */
+
+.proj_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh;  */
+    padding: 2rem 0;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+}
+
+.project__bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 720px;
+    width: 100%; /* Ensures the bg container takes full width */
+}
+.project__container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers items horizontally */
+    border: 2px solid #ddd; /* Adjust border color and width as needed */
+    border-radius: 8px;     /* Optional: Adds rounded corners */
+    padding: 1rem;          /* Optional: Adds padding inside the container */
+    box-shadow: 0 4px 6px  hsl(250, 69%, 61%); /* Optional: Adds a subtle shadow for depth */
+    background-color: hsl(250, 69%, 61%); /* Optional: Sets a background color */
+    text-align: center; /* Centers text within the container */
+    max-width: 600px;
+}
+
+.project__data {
+    flex: 1;
+    margin-right: 2rem; /* Adjust as needed for spacing */
+}
+
+.project__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 0; /* Adjust top margin if needed */
+    color: #fff;
+    text-align: left;
+}
+
+.project__description {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* .project__img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.button--white {
+    background-color: #fff;
+    color: hsl(250, 69%, 61%);
+    border: 2px solid hsl(250, 69%, 61%);
+}
+
+.button--white:hover {
+    background-color: hsl(250, 69%, 61%);
+    color: #fff;
+}
+
+.button__icon {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .project__container {
+        flex-direction: column;
+        text-align: center;
+        border: none; /* Remove border on smaller screens if desired */
+    }
+
+    .project__data {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .project__title {
+        font-size: 1.5rem;
+    }
+
+    .project__description {
+        font-size: 0.875rem;
+    }
+}
+
+
+
+
+/* Custom styles for modal */
+.modal-content {
+    border-radius: 8px; /* Rounded corners for modal */
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+
+/* Portfolio Section */
+#portfolio {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa; /* Light background for the section */
+}
+
+/* Container Class */
+.container {
+    max-width: 1200px; /* Or adjust based on your layout */
+    margin: 0 auto;
+    padding: 0 1rem; /* Optional padding for container */
+}
+
+/* Margin Bottom Utility */
+.mb-6 {
+    margin-bottom: 1.5rem; /* Adjust as needed */
+}
+
+/* Swiper Styles */
+#portfolio .swiper-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow to ensure only one slide is visible */
+}
+
+#portfolio .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#portfolio .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Each slide takes full width of the container */
+    box-sizing: border-box;
+}
+
+/* Portfolio Content Styles */
+#portfolio .portfolio__content {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center;
+    text-align: left; /* Align text to the left */
+    padding: 1rem;
+    background: #fff; /* White background for slides */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 1rem; /* Space between image and data */
+}
+
+#portfolio .portfolio__content:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+#portfolio .portfolio__img-container {
+    flex: 1; /* Allow image container to grow */
+}
+
+#portfolio .portfolio__img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 200px; /* Limit image height */
+}
+
+#portfolio .portfolio__data {
+    flex: 2; /* Allow data container to grow more than image container */
+    padding: 1rem;
+}
+
+#portfolio .portfolio__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#portfolio .portfolio__description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #6c757d; /* Gray color for description */
+}
+
+#portfolio .portfolio__button {
+    background: hsl(250, 69%, 61%); /* Button background color */
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#portfolio .portfolio__button:hover {
+    background: hsl(250, 69%, 61%); /* Darker color on hover */
+}
+
+#portfolio .swiper-button-next,
+#portfolio .swiper-button-prev {
+    color: hsl(250, 69%, 61%); /* Custom color for navigation icons */
+}
+
+#portfolio .swiper-pagination {
+    bottom: 10px;
+}
+
+#portfolio .swiper-pagination-bullet {
+    background: hsl(250, 69%, 61%); /* Custom color for pagination bullets */
+}
+
+#portfolio .swiper-pagination-bullet-active {
+    background:hsl(250, 69%, 61%); /* Darker color for active bullet */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #portfolio .portfolio__img {
+        max-height: 150px; /* Adjust image height for smaller screens */
+    }
+
+    #portfolio .portfolio__title {
+        font-size: 1.25rem;
+    }
+
+    #portfolio .portfolio__description {
+        font-size: 0.875rem;
+    }
+
+    #portfolio .portfolio__content {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    #portfolio .portfolio__img-container,
+    #portfolio .portfolio__data {
+        width: 100%; /* Ensure full width for both sections */
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.project img {
+    max-width: 100%;
+    height: 250px;
+    /* border-radius: .25rem; */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer a {
+    color: #007bff;
+}

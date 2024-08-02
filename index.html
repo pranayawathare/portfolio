@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pranay Awathare</title>
+    <!-- <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg   fixed-top">
+        <a class="navbar-brand " href="#">Pranay</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#research">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- Other sections of your webpage -->
+
+
+    <!-- Home Section -->
+    <section id="home" class="container mt-5 py-5">
+        <div class="header__content d-flex justify-content-between align-items-center">
+            <!-- Social Media Icons -->
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/pranay-awathare-57b9041b8/" target="_blank" class="home__social-icon">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="https://github.com/pranayawathare" target="_blank" class="home__social-icon">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+                <a href="https://twitter.com/akkiboeing" target="_blank" class="home__social-icon">
+                    <i class="uil uil-twitter-alt"></i>
+                </a>
+            </div>
+            <div class="header__text text-center">
+                <h1>Hi, I'm Pranay</h1>
+                <h2 class="header__title">AI Engineer</h2>
+                <p class="header__description">Artificial Intelligence | Data Science | Software Development | Full-Stack | Open Research | Freelance</p>
+                <a href="#contact" class="btn btn-info btn-lg">Contact</a>
+            </div>
+            <div class="header__img-container">
+                <img src="static/portfolio/photo.jpg" alt="Pranay" class="header__img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-3 py-5">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4 text-center">
+                <img src="{% static '/portfolio/about_me.jpg' %}" class="img-fluid rounded-circle" style="object-fit: fill;" alt="Your Image">
+            </div>
+            <div class="col-md-6 mb-4">
+                <p>Currently working as an AI Engineer with 1+ years of experience in AI application design, development, testing, and deployment.</p>
+                <p>1+ year of experience as an AI consultant with experience in AI application design, development, testing, and deployment.</p>
+                <p>Data analyst with 2+ years of experience in gathering business requirements, basic and detailed design specification, interpreting and analyzing data to drive successful business solutions.</p>
+                <p>Proficient knowledge in statistics, mathematics, and analytics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row">
+                <!-- Python -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fab fa-python fa-3x mb-2"></i>
+                    <h3>Python</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 4-5yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>Data analysis</li>
+                        <li>Web development with Django</li>
+                        <li>ML,NLP,DL</li>
+                    </ul>
+                </div>
+    
+                <!-- Machine Learning -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-brain fa-3x mb-2"></i>
+                    <h3>Machine Learning</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 2-3yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>Scikit-learn and TensorFlow</li>
+                        <li>Model evaluation and tuning</li>
+                        <li>Feature engineering and selection</li>
+                    </ul>
+                </div>
+    
+                <!-- Natural Language Processing -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-language fa-3x mb-2"></i>
+                    <h3>Natural Language Processing</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 1-2yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>Text classification and sentiment analysis</li>
+                        <li>Named entity recognition (NER), OCR</li>
+                        <li>Language generation and understanding</li>
+                    </ul>
+                </div>
+                <br>
+                <!-- Deep Learning -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-network-wired fa-3x mb-2"></i>
+                    <h3>Deep Learning</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 1-2yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>Neural networks and CNNs</li>
+                        <li>Libraries for sequential data: PyTorch, TensorFlow, keras</li>
+                        <li>Transfer learning and fine-tuning models</li>
+                    </ul>
+                </div>
+    
+                <!-- AWS -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fab fa-aws fa-3x mb-2"></i>
+                    <h3>AWS</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 2-3yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>EC2, S3, and RDS</li>
+                        <li>Lambda functions and API Gateway</li>
+                        <li>CloudFormation and deployment automation</li>
+                    </ul>
+                </div>
+    
+                <!-- Data Analysis -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-chart-line fa-3x mb-2"></i>
+                    <h3>Data Analysis</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 3-4yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>Advance SQL queries</li>
+                        <li>Data visualization using tableau Matplotlib and Seaborn</li>
+                        <li>Data cleaning and preprocessing techniques</li>
+                    </ul>
+                </div>
+    
+                <!-- Backend Development -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-code fa-3x mb-2"></i>
+                    <h3>Backend Development</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 2-3yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>RESTful APIs and microservices</li>
+                        <li>Database design and management</li>
+                        <li>Server-side scripting and logic</li>
+                    </ul>
+                </div>
+    
+                <!-- Frontend Development -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-laptop-code fa-3x mb-2"></i>
+                    <h3>Frontend Development</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 2-3yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>HTML5, CSS3, and JavaScript</li>
+                        <li>Frameworks like React and Angular</li>
+                        <li>UI/UX design principles and tools</li>
+                    </ul>
+                </div>
+    
+                <!-- Project Management -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-project-diagram fa-3x mb-2"></i>
+                    <h3>Project Management</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 2-3yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>Agile and Scrum methodologies</li>
+                        <li>Task prioritization and resource allocation</li>
+                        <li>Risk management and stakeholder communication</li>
+                    </ul>
+                </div>
+    
+                <!-- Database Management -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-database fa-3x mb-2"></i>
+                    <h3>Database Management</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 3-4yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>SQL and NoSQL databases</li>
+                        <li>Database optimization and indexing</li>
+                        <li>Backup and recovery procedures</li>
+                    </ul>
+                </div>
+
+                <!-- Data Visualization -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-chart-line fa-3x mb-2"></i>
+                    <h3>Data Visualization/dashboard</h3>
+                    <div class="d-flex align-items-center justify-content-center mb-2">
+                        <p class="mb-0">Exp 2-3yr</p>
+                        <button class="btn-toggle" onclick="toggleDetails(this)">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <ul class="list-unstyled details-list" style="display: none;">
+                        <li>Clean and arrrange the data </li>
+                        <li>Create Visualization and dashboards</li>
+                        <li>Create reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Experience Section -->
+    <section id="experience" class="container py-5">
+        <h2 class="text-center mb-4">Experience</h2>
+        <div class="experience-timeline">
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h5 class="card-title">AI Engineer</h5>
+                    <h6 class="card-subtitle text-muted">Digital Clamp | Toshima, Ikebukuro, Tokyo, Japan | June 2023 - Present</h6>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalAIEngineer">Click for More Details</button>
+                </div>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h5 class="card-title">AI Consultant</h5>
+                    <h6 class="card-subtitle text-muted">AI Infinity | Minato-ku, Tokyo, Japan | February 2022 - March 2023</h6>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalAIConsultant">Click for More Details</button>
+                </div>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h5 class="card-title">Data Analyst</h5>
+                    <h6 class="card-subtitle text-muted">Freelance and Internship | Remote Work, Japan | January 2021 - January 2022</h6>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalFreelance">Click for More Details</button>
+                </div>
+            </div>
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h5 class="card-title">Data Analyst</h5>
+                    <h6 class="card-subtitle text-muted">Wintech Design Solution | Nagpur, India | September 2017 - October 2019</h6>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalDataAnalyst">Click for More Details</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modals for Experience Details -->
+        <!-- Modal for Data Analyst -->
+        <div class="modal fade" id="modalDataAnalyst" tabindex="-1" role="dialog" aria-labelledby="modalDataAnalystLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDataAnalystLabel">Data Analyst</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Wintech Design Solution | Nagpur, India | September 2017 - October 2019</h6>
+                        <ul>
+                            <li>Proficiently managed end-to-end ETL processes, ensuring the efficient extraction, transformation, and loading of pharmaceutical data, thereby enhancing data accessibility and organization for MR activity and sales data.</li>
+                            <li>Conducted comprehensive data analyses, extracting valuable insights to inform strategic decisions within the industry.</li>
+                            <li>Designed and implemented informative business dashboards, visually communicating critical insights and streamlining decision-making processes.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for Freelance and Internship -->
+        <div class="modal fade" id="modalFreelance" tabindex="-1" role="dialog" aria-labelledby="modalFreelanceLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFreelanceLabel">Freelance and Internship</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Remote Work, Japan | January 2021 - January 2022</h6>
+                        <ul>
+                            <li>Developed dynamic sales data dashboards, delivering actionable insights for informed decision-making.</li>
+                            <li>Successfully completed a data science internship, mastering data preparation, data visualization, and summary formation, while also working on a fitness data project to deliver insightful outcomes.</li>
+                            <li>Performed rigorous data cleaning on sales data, ensuring data accuracy and consistency for more reliable analytics and decision-making.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for AI Consultant -->
+        <div class="modal fade" id="modalAIConsultant" tabindex="-1" role="dialog" aria-labelledby="modalAIConsultantLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalAIConsultantLabel">AI Consultant</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>AI Infinity | Minato-ku, Tokyo, Japan | February 2022 - March 2023</h6>
+                        <ul>
+                            <li>Created an innovative NLP project to detect and address abusive language in call centers, elevating customer service quality and fostering respectful communication.</li>
+                            <li>Built an in-house NLP voice reporting system, capturing and summarizing key meeting points for streamlined reference and decision-making within the organization.</li>
+                            <li>Transformed journaling with a sound diary, replacing pen-and-paper with convenient audio input for efficient, accessible daily entries.</li>
+                            <li>Created an NLP budgeting app, tracking financial activities via voice input for easy and convenient financial management.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for AI Engineer -->
+        <div class="modal fade" id="modalAIEngineer" tabindex="-1" role="dialog" aria-labelledby="modalAIEngineerLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalAIEngineerLabel">AI Engineer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Digital Clamp | Toshima, Ikebukuro, Tokyo, Japan | June 2023 - Present</h6>
+                        <ul>
+                            <li>Demonstrated adept project management skills by independently overseeing complex initiatives, ensuring on-time delivery and effective risk mitigation.</li>
+                            <li>Leading the creation of a custom ML pipeline to improve price estimations from product images for a competitive edge.</li>
+                            <li>Showcased mastery in full-stack web development, seamlessly combining HTML, JavaScript, CSS, PHP, and Python to craft intuitive and user-friendly interfaces.</li>
+                            <li>Proficiently oversaw website maintenance, guaranteeing its security, functionality, and content stayed current and aligned with user expectations and business goals.</li>
+                            <li>Demonstrated expertise in website maintenance, efficiently managing AWS deployments for peak performance and scalability.</li>
+                                
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Services</h2>
+            <div class="row">
+                <!-- AI Solutions -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-cogs fa-3x mb-2"></i>
+                        <h3>AI Solutions</h3>
+                        <p>Offering custom AI solutions to automate tasks and improve efficiency.</p>
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#serviceModal1">
+                            View More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Data Analysis -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-chart-line fa-3x mb-2"></i>
+                        <h3>Data Analysis</h3>
+                        <p>Providing insights and analytics from data to drive business decisions.</p>
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#serviceModal2">
+                            View More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Full-Stack Development -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-laptop-code fa-3x mb-2"></i>
+                        <h3>Full-Stack Development</h3>
+                        <p>End-to-end front-end, back-end development, and deployment.</p>
+                        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#serviceModal3">
+                            View More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modals -->
+        <!-- AI Solutions Modal -->
+        <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel1">AI Solutions</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Artificial Intelligence is the future.</p>
+                        <p>I develop end-to-end AI based systems in Computer Vision, NLP, machine leaning, DL and other AI sub-domains.</p>
+                        <p>I can also offer support to existing AI based projects &amp; researches in your firm.</p>
+                        <p>Low-latency, high real-time performance, &amp; scalability are my priorities.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Data Analysis Modal -->
+        <div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="serviceModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel2">Data Analysis</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Unlock the potential of your data.</p>
+                        <p>I provide comprehensive data analysis services to help you make data-driven decisions.</p>
+                        <p>From data cleaning and preprocessing to advanced statistical analysis and visualization, I deliver actionable insights that drive business growth.</p>
+                        <p>Whether it's customer segmentation, sales forecasting, or operational efficiency, I can help you leverage your data to achieve your goals.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Full-Stack Development Modal -->
+        <div class="modal fade" id="serviceModal3" tabindex="-1" aria-labelledby="serviceModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel3">Full-Stack Development</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>I create responsive and user-friendly websites by handling both front-end and back-end development tasks.</p>
+                        <p>My expertise includes designing interactive user interfaces, developing server-side logic, and managing databases.</p>
+                        <p>From initial concept to deployment, I ensure the seamless integration of all components, resulting in high-performing and scalable web applications.</p>
+                        <p>Whether you need an e-commerce platform, a content management system, or a custom web application, I can deliver a solution tailored to your needs.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <!-- project Section -->
+    <section class="project proj_section">
+        <div class="project__bg ">
+            <div class="project__container container grid">
+                <div class="project__data ">
+                    <h2 class="project__title mt-3">Interested in my service?</h2>
+                    <p class="project__description">
+                        Contact me for collaboration, and assistance for your
+                        new cutting-edge project or research.
+                    </p>
+                    <a href="#contact" class="button button--flex button--white">
+                        Contact
+                        <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+                <div class="img">
+                    <img src="static/portfolio/contact.png" alt="Web Development " class="project__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <!-- Portfolio Section -->
+    <section class="portfolio section " id="portfolio">
+        <h2 class="text-center mb-4">Portfolio</h2>
+        <p class="text-center mb-4">My works, projects & contributions</p>
+
+        <div class="portfolio__container container swiper-container">
+            <div class="swiper-wrapper">
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/data_analysis.jpg" alt="Data_Analysis" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">Data Analysis of Medical sales Data</h3>
+                        <p class="portfolio__description"> Efficiently managed end-to-end ETL processes for pharmaceutical data, enhancing accessibility and organization for MR activity and sales. Conducted in-depth data analyses to drive strategic decisions and designed business dashboards to visually communicate key insights and support decision-making.</p>
+                        <!-- <a href="https://github.com/aksh-ai/tofu" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <!-- Add other portfolio items here -->
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/voice_report.png" alt="Voice Report" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">Voice Report</h3>
+                        <p class="portfolio__description">The Voice Report project captures meeting audio and uses Python and NLP to generate detailed reports. It identifies the meeting's purpose, summarizes discussions, extracts key points, and lists action items, enhancing productivity and ensuring important information is recorded.</p>
+                        <!-- <a href="https://github.com/aksh-ai/tofu" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/budget.png" alt="Budget, Sound dairy" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">Budget, Sound dairy</h3>
+                        <p class="portfolio__description">The Budget Project allows users to input audio to store expense data, displaying it in both tabular and graphical formats for efficient budget management. The Sound Diary project replaces traditional diaries with audio input, performing sentiment analysis, and extracting to-do items and key points for enhanced personal organization..</p>
+                        <!-- <a href="https://github.com/aksh-ai/tofu" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/bad_word.jpg" alt="Tofu - Deep Learning Framework" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">Detection of bad word in conversation</h3>
+                        <p class="portfolio__description">The Bad Word Detection project analyzes call center conversation data to identify offensive language, enabling prompt and appropriate actions based on detected content. This tool ensures compliance with communication standards and enhances overall customer service quality.</p>
+                        <!-- <a href="https://github.com/aksh-ai/tofu" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/project_management.png" alt="Tofu - Deep Learning Framework" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">Project management application</h3>
+                        <p class="portfolio__description">
+                            The Project Management Application for a home renovation company, built using Python, Django, HTML, CSS, and JavaScript, streamlines coordination with customers, vendors, and partner companies. It facilitates efficient project tracking, communication, and collaboration, ensuring seamless management of all renovation activities from start to finish.</p>
+                        <!-- <a href="https://github.com/aksh-ai/tofu" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/cost-estimates.png" alt="Tofu - Deep Learning Framework" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">Price Estimation for Renovation with machine learning</h3>
+                        <p class="portfolio__description">The Price Estimation for Renovation project utilizes machine learning to accurately estimate costs for renovation work by analyzing the company's past sales data. This solution addresses a key challenge in the renovation industry by providing reliable price estimates, enhancing budgeting and decision-making processes.</p>
+                        <!-- <a href="https://github.com/aksh-ai/tofu" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/construction_cost_estimate.png" alt="Tofu - Deep Learning Framework" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">Price Estimation for Renovation work using Image</h3>
+                        <p class="portfolio__description">The Price Estimation for Renovation project leverages machine learning and image analysis to accurately estimate costs for renovation work. By analyzing past sales data and project images, this solution addresses a key challenge in the renovation industry, providing reliable price estimates and improving budgeting and decision-making processes.</p>
+                        <!-- <a href="https://github.com/aksh-ai/tofu" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+                
+                
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/project-management-skills.png" alt="Tofu - Deep Learning Framework" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">(Freelance) Working on project managemnt application </h3>
+                        <p class="portfolio__description">The Project Management application for the Japanese company includes features for tracking login duration and task working duration. This helps monitor employee productivity, manage project timelines, and ensure efficient allocation of resources.</p>
+                        <!-- <a href="https://github.com/aksh-ai/tofu" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/ecommerce.png" alt="Tofu - Deep Learning Framework" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">Working on the E-commerce website </h3>
+                        <p class="portfolio__description">Working on the E-commerce website with the integration of AI(Own Idea) using wordpress.</p>
+                        <!-- <a href="https://github.com/aksh-ai/tofu" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="portfolio__content swiper-slide">
+                    <div class="portfolio__img-container container mb-6">
+                        <img src="static/portfolio/AI_img.jpg" alt="Tofu - Deep Learning Framework" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__data container mb-6">
+                        <h3 class="portfolio__title">Machine learning, NLP, DL practice project from kaggle data</h3>
+                        <p class="portfolio__description">A diverse list of Machine Learning (ML), Natural Language Processing (NLP), and Deep Learning (DL) projects is essential for understanding the concepts and technologies, as well as exploring various methods to handle and analyze data effectively.</p>
+                        <a href="https://github.com/pranayawathare" class="button button--flex button--small portfolio__button">
+                            View
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation controls -->
+            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    
+    
+
+
+
+    
+    <!-- Research Section -->
+    <section id="research" class="container py-5">
+        <h2 class="text-center mb-4">Research</h2>
+        <ul class="list-unstyled">
+            <!-- Research Article 1 -->
+            <li class="mb-4">
+                <h4>Gesture Actuated Robotic Arm</h4>
+                <p><strong>Authors:</strong> Akshay Pisalkar, Nirbhay Khadse, Pranay Awathare, Divya Varma, Dhanashree Pimpalkar</p>
+                <p><strong>Abstract:</strong> This project explores replacing traditional remote controls for robotic arms with intuitive gesture-based controls using MEMS-Accelerometer and Flex Sensor technology. It demonstrates a wireless, electronic system where an accelerometer mounted on the operator’s hand controls the robotic arm’s movements based on hand gestures.</p>
+                <a href="https://journals.pen2print.org/index.php/ijr/article/view/4139" class="btn btn-primary" target="_blank">Read the Paper</a>
+            </li>
+            <!-- Add more research articles here if needed -->
+        </ul>
+    </section>
+
+
+    <!-- Blog Section -->
+    <section id="blog" class="container py-5">
+        <h2 class="text-center mb-4">Blog</h2>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="lead">Coming Soon ....</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <!-- <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Send</button>
+                    </form> -->
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5>Contact Information</h5>
+                    <p>Email: awatharepranay@gmail.com</p>
+                    <!-- <p>Phone: +81-XX-XXXX-XXXX</p> -->
+                    <p>Address: Midori Ward, Yokohama City</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Pranay Awathare. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Bootstrap JavaScript and dependencies (Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gA2JAC8e7A4FcA2w/rfWPyQzW8VbO/tK4Uo2j8Fov3kWrF3Us8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-2s0rH4wZzjvnH3C1sHRosJY83tibBTR1hD0kr7eAoO+6xk1gVXgK6D6IRkU66Lt3p" crossorigin="anonymous"></script>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1, // Number of slides visible at once
+            spaceBetween: 20, // Space between slides
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        // Function to open modal
+        function openModal(modalId) {
+            var modal = new bootstrap.Modal(document.getElementById(modalId));
+            modal.show();
+        }
+
+        // Add event listeners to "View More" buttons
+        document.querySelectorAll('[data-bs-toggle="modal"]').forEach(button => {
+            button.addEventListener('click', function() {
+                var targetModalId = this.getAttribute('data-bs-target').substring(1); // Remove '#' from id
+                openModal(targetModalId);
+            });
+        });
+    });
+
+    // Function to toggle details
+    function toggleDetails(button) {
+        // Find the closest parent .col-md-4 element
+        var parent = button.closest('.col-md-4');
+        
+        // Find the details list within this parent
+        var detailsList = parent.querySelector('.details-list');
+        
+        // Toggle the display style of the details list
+        if (detailsList.style.display === 'none') {
+            detailsList.style.display = 'block';
+            button.innerHTML = '<i class="fas fa-chevron-up"></i>'; // Change icon to up
+        } else {
+            detailsList.style.display = 'none';
+            button.innerHTML = '<i class="fas fa-chevron-down"></i>'; // Change icon to down
+        }
+    }
+</script>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: hsl(250, 69%, 61%);
+    margin: 0 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.navbar-brand{
+    color: hsl(250, 69%, 61%);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    /* border-radius: 1rem; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    background-color: #fff;
+}
+
+.header__text {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.header__title {
+    color: #6c757d;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.header__description {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.header__img-container {
+    margin: 0 2rem;
+}
+
+.header__img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 13px solid  hsl(250, 69%, 61%);
+    object-fit: fill;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.375rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-lg {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+/* Social Media Icons */
+.home__social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.home__social-icon {
+    color:  hsl(250, 69%, 61%);
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.home__social-icon:hover {
+    color: #0056b3;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+    .header__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__text {
+        margin: 1.5rem 0;
+    }
+
+    .header__img-container {
+        margin: 1.5rem 0;
+    }
+}
+
+nav {
+    margin-bottom: 1rem;
+    background-color: hsl(250, 60%, 99%);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    /* background-color: var(--body-color); */
+    padding: 3rem 1rem;
+}
+
+/* About Section Image Styling */
+#about img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+    border: 3px solid #007bff; /* Optional border color */
+}
+
+/* Skills Section Icons */
+#skills i {
+    color: hsl(250, 69%, 61%); /* Color for skill icons */
+    transition: color 0.3s ease;
+}
+
+#skills i:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+#skills h3 {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between the text and button */
+}
+
+
+/* Ensure the skill-info container is properly aligned */
+.skill-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between text and button */
+    margin-bottom: 1rem; /* Adjust spacing from below elements */
+}
+
+/* Style the toggle button */
+.btn-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    padding: 0;
+}
+
+
+
+/* Show the list when details-list is active */
+.details-list.show {
+    max-height: 1000px; /* Adjust as necessary */
+}
+
+
+.details-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.details-content {
+    position: relative;
+    padding: 20px;
+    background: #fff; /* Background color of content */
+    border-radius: 6px;
+    margin-top: 30px; /* Adjusted to create space between line and content */
+}
+.mb-0{
+    font-weight: 400;
+}
+
+.details-list li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.details-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+
+
+/* Experience Section */
+.experience-timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    border-left: 2px solid #007bff; /* Vertical line color */
+    transform: translateX(-50%);
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10px; /* Adjusted to create space between line and content */
+    width: 10px;
+    height: 10px;
+    background: #007bff; /* Dot color */
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    position: relative;
+    padding: 20px;
+    /* background: #f8f9fa;  */
+    border-radius: 6px;
+    margin-top: 30px; /* Adjusted to create space between line and content */
+}
+.btn.btn-info{
+    background-color: hsl(250, 69%, 61%);
+    border-color: hsl(250, 69%, 61%);
+    color: #fff;
+
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 0;
+    margin-right: calc(50% + 30px); /* Adjusted to create space between line and content */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: calc(50% + 30px); /* Adjusted to create space between line and content */
+    margin-right: 0;
+}
+
+.timeline-content h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.timeline-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Modal Styles */
+/* .modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+} */
+
+.proj_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh;  */
+    padding: 2rem 0;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+}
+
+.project__bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 720px;
+    width: 100%; /* Ensures the bg container takes full width */
+}
+.project__container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers items horizontally */
+    border: 2px solid #ddd; /* Adjust border color and width as needed */
+    border-radius: 8px;     /* Optional: Adds rounded corners */
+    padding: 1rem;          /* Optional: Adds padding inside the container */
+    box-shadow: 0 4px 6px  hsl(250, 69%, 61%); /* Optional: Adds a subtle shadow for depth */
+    background-color: hsl(250, 69%, 61%); /* Optional: Sets a background color */
+    text-align: center; /* Centers text within the container */
+    max-width: 600px;
+}
+
+.project__data {
+    flex: 1;
+    margin-right: 2rem; /* Adjust as needed for spacing */
+}
+
+.project__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 0; /* Adjust top margin if needed */
+    color: #fff;
+    text-align: left;
+}
+
+.project__description {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* .project__img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.button--white {
+    background-color: #fff;
+    color: hsl(250, 69%, 61%);
+    border: 2px solid hsl(250, 69%, 61%);
+}
+
+.button--white:hover {
+    background-color: hsl(250, 69%, 61%);
+    color: #fff;
+}
+
+.button__icon {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .project__container {
+        flex-direction: column;
+        text-align: center;
+        border: none; /* Remove border on smaller screens if desired */
+    }
+
+    .project__data {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .project__title {
+        font-size: 1.5rem;
+    }
+
+    .project__description {
+        font-size: 0.875rem;
+    }
+}
+
+
+
+
+/* Custom styles for modal */
+.modal-content {
+    border-radius: 8px; /* Rounded corners for modal */
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+
+/* Portfolio Section */
+#portfolio {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa; /* Light background for the section */
+}
+
+/* Container Class */
+.container {
+    max-width: 1200px; /* Or adjust based on your layout */
+    margin: 0 auto;
+    padding: 0 1rem; /* Optional padding for container */
+}
+
+/* Margin Bottom Utility */
+.mb-6 {
+    margin-bottom: 1.5rem; /* Adjust as needed */
+}
+
+/* Swiper Styles */
+#portfolio .swiper-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow to ensure only one slide is visible */
+}
+
+#portfolio .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#portfolio .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Each slide takes full width of the container */
+    box-sizing: border-box;
+}
+
+/* Portfolio Content Styles */
+#portfolio .portfolio__content {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center;
+    text-align: left; /* Align text to the left */
+    padding: 1rem;
+    background: #fff; /* White background for slides */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 1rem; /* Space between image and data */
+}
+
+#portfolio .portfolio__content:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+#portfolio .portfolio__img-container {
+    flex: 1; /* Allow image container to grow */
+}
+
+#portfolio .portfolio__img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 200px; /* Limit image height */
+}
+
+#portfolio .portfolio__data {
+    flex: 2; /* Allow data container to grow more than image container */
+    padding: 1rem;
+}
+
+#portfolio .portfolio__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#portfolio .portfolio__description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #6c757d; /* Gray color for description */
+}
+
+#portfolio .portfolio__button {
+    background: hsl(250, 69%, 61%); /* Button background color */
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#portfolio .portfolio__button:hover {
+    background: hsl(250, 69%, 61%); /* Darker color on hover */
+}
+
+#portfolio .swiper-button-next,
+#portfolio .swiper-button-prev {
+    color: hsl(250, 69%, 61%); /* Custom color for navigation icons */
+}
+
+#portfolio .swiper-pagination {
+    bottom: 10px;
+}
+
+#portfolio .swiper-pagination-bullet {
+    background: hsl(250, 69%, 61%); /* Custom color for pagination bullets */
+}
+
+#portfolio .swiper-pagination-bullet-active {
+    background:hsl(250, 69%, 61%); /* Darker color for active bullet */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #portfolio .portfolio__img {
+        max-height: 150px; /* Adjust image height for smaller screens */
+    }
+
+    #portfolio .portfolio__title {
+        font-size: 1.25rem;
+    }
+
+    #portfolio .portfolio__description {
+        font-size: 0.875rem;
+    }
+
+    #portfolio .portfolio__content {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    #portfolio .portfolio__img-container,
+    #portfolio .portfolio__data {
+        width: 100%; /* Ensure full width for both sections */
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.project img {
+    max-width: 100%;
+    height: 250px;
+    /* border-radius: .25rem; */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer a {
+    color: #007bff;
+}
+
+</style>
+</html>
